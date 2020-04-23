@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_history_petugas"
+        android:icon="@drawable/ic_library_books"
+        android:title="@string/text_history" />
+
+    <item
+        android:id="@+id/navigation_entry_petugas"
+        android:icon="@drawable/ic_format_list_bulleted"
+        android:title="@string/text_entry_data"/>
+    <item
+        android:id="@+id/navigation_profile_petugas"
+        android:icon="@drawable/ic_person_black"
+        android:title="@string/text_menu_profile"/>
+
+</menu>

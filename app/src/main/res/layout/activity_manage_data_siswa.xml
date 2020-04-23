@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.datasiswa.ManageDataSiswaActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tv_title_nisn"
+            style="@style/textTitleForm"
+            android:layout_marginStart="24dp"
+            android:text="NISN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/edt_nisn_siswa"
+            android:hint="NISN ..."
+            android:inputType="number"
+            style="@style/editTextCustom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_nisn"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_nisn" />
+
+
+        <TextView
+            android:id="@+id/tv_title_nis"
+            style="@style/textTitleForm"
+            android:text="NIS"
+            app:layout_constraintEnd_toEndOf="@+id/edt_nisn_siswa"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edt_nisn_siswa"
+            app:layout_constraintTop_toBottomOf="@+id/edt_nisn_siswa" />
+
+        <EditText
+            android:id="@+id/edt_nis_siswa"
+            android:hint="NIS ..."
+            android:inputType="number"
+            style="@style/editTextCustom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/edt_nisn_siswa"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_nis" />
+
+
+        <TextView
+            android:id="@+id/tv_title_email"
+            style="@style/textTitleForm"
+            android:text="Email"
+            app:layout_constraintEnd_toEndOf="@+id/edt_nis_siswa"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edt_nis_siswa"
+            app:layout_constraintTop_toBottomOf="@+id/edt_nis_siswa" />
+
+        <EditText
+            android:id="@+id/edt_email_siswa"
+            style="@style/editTextCustom"
+            android:hint="Email ..."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/edt_nis_siswa"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_email" />
+
+        <TextView
+            android:id="@+id/tv_title_nama"
+            style="@style/textTitleForm"
+            android:text="Nama"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_email"
+            app:layout_constraintTop_toBottomOf="@+id/edt_email_siswa" />
+
+        <EditText
+            android:id="@+id/edt_nama_siswa"
+            style="@style/editTextCustom"
+            android:hint="Nama Siswa ..."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/edt_email_siswa"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_nama" />
+
+        <TextView
+            android:id="@+id/tv_title_alamat"
+            style="@style/textTitleForm"
+            android:text="Alamat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_nama"
+            app:layout_constraintTop_toBottomOf="@+id/edt_nama_siswa" />
+
+        <EditText
+            android:id="@+id/edt_alamat_siswa"
+            style="@style/editTextCustom"
+            android:hint="Alamat Siswa ..."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_alamat"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_alamat" />
+
+        <TextView
+            android:id="@+id/tv_title_telp"
+            style="@style/textTitleForm"
+            android:text="No Telp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_alamat"
+            app:layout_constraintTop_toBottomOf="@+id/edt_alamat_siswa" />
+
+        <EditText
+            android:id="@+id/edt_telp_siswa"
+            style="@style/editTextCustom"
+            android:hint="No Telp Siswa ..."
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_telp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_telp" />
+
+
+        <TextView
+            android:id="@+id/tv_title_pass"
+            style="@style/textTitleForm"
+            android:text="Password"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edt_telp_siswa"
+            app:layout_constraintTop_toBottomOf="@+id/edt_telp_siswa" />
+
+        <EditText
+            android:id="@+id/edt_pass_siswa"
+            style="@style/editTextCustom"
+            android:layout_marginTop="8dp"
+            android:hint="Password ..."
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_pass"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_pass" />
+
+        <TextView
+            android:id="@+id/tv_title_kelas"
+            style="@style/textTitleForm"
+            android:text="Kelas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_pass"
+            app:layout_constraintTop_toBottomOf="@+id/edt_pass_siswa" />
+
+
+        <Spinner
+            android:id="@+id/spinner_kelas_siswa"
+            style="@style/spinnerCustom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_kelas"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_kelas" />
+
+
+        <TextView
+            android:id="@+id/tv_alert_kelas"
+            style="@style/textTitleForm"
+            tools:text="@string/data_sebelumnya"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_spp"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_kelas_siswa" />
+
+
+        <TextView
+            android:id="@+id/tv_title_spp"
+            style="@style/textTitleForm"
+            android:text="SPP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_kelas"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alert_kelas" />
+
+
+        <TextView
+            android:id="@+id/tv_alert_spp"
+            style="@style/textTitleForm"
+            tools:text="@string/data_sebelumnya"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_spp"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_spp_siswa" />
+
+        <Spinner
+            android:id="@+id/spinner_spp_siswa"
+            style="@style/spinnerCustom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_spp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_spp" />
+
+        <Button
+            android:id="@+id/btn_simpan_data_siswa"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_button_login"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:text="Simpan Data"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="28dp"
+            app:layout_constraintEnd_toEndOf="@+id/spinner_spp_siswa"
+            app:layout_constraintStart_toStartOf="@+id/spinner_spp_siswa"
+            app:layout_constraintTop_toBottomOf="@+id/tv_alert_spp" />
+
+
+        <ProgressBar
+            android:id="@+id/pg_manage_data_siswa"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_siswa_change_password"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button_logout"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:text="Ganti Password"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/btn_simpan_data_siswa"
+            app:layout_constraintStart_toStartOf="@+id/btn_simpan_data_siswa"
+            app:layout_constraintTop_toBottomOf="@+id/btn_simpan_data_siswa" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

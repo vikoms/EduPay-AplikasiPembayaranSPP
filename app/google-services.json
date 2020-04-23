@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "580040326263",
+    "firebase_url": "https://ujikom-pembayaran-spp.firebaseio.com",
+    "project_id": "ujikom-pembayaran-spp",
+    "storage_bucket": "ujikom-pembayaran-spp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580040326263:android:c0591328494e60b6bb9a72",
+        "android_client_info": {
+          "package_name": "com.example.latihanujikompaket2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580040326263-1el854b1qnsbm1q5i533cku6l1e762e2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.latihanujikompaket2",
+            "certificate_hash": "1dd18e4a19801d6facbafc0b659dea205937bb97"
+          }
+        },
+        {
+          "client_id": "580040326263-2tvat834di3aie2nk30juksf8ts647kl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4BT8IY016mvF29upOh3OEvhmTnT_9EAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580040326263-2tvat834di3aie2nk30juksf8ts647kl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/petugas_mobile_navigation"
+    app:startDestination="@+id/navigation_home_siswa">
+
+
+        <fragment
+            android:id="@+id/navigation_profile_siswa"
+            android:name="com.example.latihanujikompaket2.ui.mainsiswa.profile.ProfileSiswaFragment"
+            android:label="@string/text_menu_profile"
+            tools:layout="@layout/fragment_profile_siswa" />
+
+
+        <fragment
+            android:id="@+id/navigation_home_siswa"
+            android:name="com.example.latihanujikompaket2.ui.mainsiswa.home.HomeSiswaFragment"
+            android:label="@string/title_home"
+            tools:layout="@layout/fragment_home_siswa" />
+
+</navigation>

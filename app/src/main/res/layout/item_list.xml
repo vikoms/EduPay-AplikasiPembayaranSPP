@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:background="@drawable/background_form_item"
+    android:padding="10dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/tv_item_first_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Text 1st"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:textColor="#BA000000"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_item_second_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Text 2nd"
+        android:layout_below="@+id/tv_item_first_list"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:textColor="#BA000000"
+        android:textSize="15sp"/>
+
+    <ImageView
+        android:id="@+id/img_list_delete"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/ic_delete_black"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

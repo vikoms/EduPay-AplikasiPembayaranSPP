@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">EduPay</string>
+    <string name="text_spalsh_screen">Welcome To\nEduPay Application</string>
+    <string name="btn_get_started">Get Started</string>
+    <string name="sign_in_your_account">Sign in your account</string>
+    <string name="form_email_address">Email Address</string>
+    <string name="form_password_login">Password</string>
+    <string name="text_signin">Sign In</string>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_history">History</string>
+    <string name="text_entry_data">Entry Data</string>
+    <string name="text_hello_admin">Hello : %1$s</string>
+    <string name="text_data_siswa">Data Siswa</string>
+    <string name="text_data_kelas">Data Kelas</string>
+    <string name="text_data_spp">Data SPP</string>
+    <string name="text_data_petugas">Data Petugas</string>
+    <string name="text_pilih_tahun">Pilih Tahun</string>
+    <string name="text_tahun_history">Tahun : %1$s</string>
+    <string name="text_logo_edupay">Logo Edupay</string>
+    <string name="text_header_background">Header Background</string>
+    <string name="text_arrow_back">arrow back</string>
+    <string name="text_bg_detail_siswa">bg_detail_siswa</string>
+    <string name="text_detail_siswa">Detail Siswa</string>
+    <string name="text_nama_siswa">Viko Muhammad Saputra</string>
+    <string name="text_nama">Nama</string>
+    <string name="text_nisn">NISN</string>
+    <string name="text_nisn_siswa">Nisn Siswa</string>
+    <string name="text_menu_profile">Profile</string>
+    <string name="text_id_petugas">ID Petugas</string>
+    <string name="text_level">Level</string>
+    <string name="text_level_petugas">Petugas</string>
+    <string name="text_edit_profile">Edit Profil</string>
+    <string name="data_sebelumnya">Data Sebelumnya : %1$s</string>
+    <string name="nama_pembayaran">Nama : %1$s</string>
+    <string name="jumlah_pembayaran">Jumlah :Rp.%1$s</string>
+    <string name="tanggal_pembayaran">Tanggal : %1$s</string>
+    <string name="bulan_pembayaran">Bulam : %1$s</string>
+    <string name="tahun_pembayaran">Tahun : %1$s</string>
+    <string name="petugas_pembayaran">Petugas : %1$s</string>
+
+
+    <string-array name="levels_array">
+        <item>Admin</item>
+        <item>Petugas</item>
+    </string-array>
+</resources>

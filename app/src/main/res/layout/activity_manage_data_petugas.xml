@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="305dp"
+    android:layout_height="490dp"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    tools:context=".ui.datapetugas.ManageDataPetugasActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="25dp">
+    <Button
+        android:id="@+id/btn_ubah_data_siswa"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_login"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="Simpan Data"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/spinner_level_petugas"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/spinner_level_petugas"
+        app:layout_constraintTop_toBottomOf="@+id/tv_alert_level" />
+
+    <EditText
+        android:id="@+id/edt_nama_petugas"
+        style="@style/editTextCustom"
+        android:hint="Nama ..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/edt_nip_petugas"
+        style="@style/editTextCustom"
+        android:hint="NIP ..."
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <EditText
+            android:id="@+id/edt_pass_petugas"
+            style="@style/editTextCustom"
+            android:hint="Password ..."
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/edt_nama_petugas"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title_password_petugas" />
+
+    <ImageView
+        android:id="@+id/close_manage_petugas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:srcCompat="@drawable/ic_close_black" />
+
+
+    <ProgressBar
+        android:id="@+id/pg_manage_data_petugas"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_level_petugas"
+        style="@style/spinnerCustom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="Manage Data Petugas"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/textTitleForm"
+        android:text="Nama"
+        app:layout_constraintStart_toStartOf="@+id/edt_nip_petugas"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nip_petugas" />
+
+        <TextView
+            android:id="@+id/tv_alert_level"
+            style="@style/textTitleForm"
+            android:visibility="gone"
+            android:text="@string/data_sebelumnya"
+            app:layout_constraintStart_toStartOf="@+id/spinner_level_petugas"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_level_petugas" />
+
+    <TextView
+        android:id="@+id/textView10"
+        style="@style/textTitleForm"
+        android:layout_marginTop="20dp"
+        android:text="NIP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+
+    <TextView
+        android:id="@+id/tv_title_password_petugas"
+        style="@style/textTitleForm"
+        android:text="Password"
+        app:layout_constraintEnd_toEndOf="@+id/edt_nama_petugas"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_nama_petugas"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nama_petugas" />
+
+        <TextView
+            android:id="@+id/textView9"
+            style="@style/textTitleForm"
+            android:text="Level"
+            app:layout_constraintEnd_toEndOf="@+id/edt_email_petugas"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_title_password_petugas"
+            app:layout_constraintTop_toBottomOf="@+id/edt_pass_petugas" />
+
+
+
+        <Button
+            android:id="@+id/btn_petugas_change_password"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button_logout"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:text="Ganti Password"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/btn_ubah_data_siswa"
+            app:layout_constraintStart_toStartOf="@+id/btn_ubah_data_siswa"
+            app:layout_constraintTop_toBottomOf="@+id/btn_ubah_data_siswa" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

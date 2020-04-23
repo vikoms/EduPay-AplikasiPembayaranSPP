@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.mainpetugas.profile.ProfilePetugasFragment">
+
+    <TextView
+        android:id="@+id/tv_title_id_petugas"
+        style="@style/textTitleDetailSiswa"
+        android:layout_marginStart="16dp"
+        android:text="@string/text_nama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_id_petugas"
+        style="@style/textContentDetailSiswa"
+        tools:text="@string/text_nama_siswa"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title_id_petugas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_id_petugas"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_id_petugas" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@+id/tv_id_petugas"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_id_petugas"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id_petugas" />
+
+    <TextView
+        android:id="@+id/tv_title_nama_petugas"
+        style="@style/textTitleDetailSiswa"
+        android:text="@string/text_id_petugas"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_id_petugas"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/tv_nama_petugas"
+        style="@style/textContentDetailSiswa"
+        tools:text="12345678"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title_nama_petugas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_nama_petugas"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_nama_petugas" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@+id/tv_nama_petugas"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_nama_petugas"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama_petugas" />
+
+    <TextView
+        android:id="@+id/tv_title_level_petugas"
+        style="@style/textTitleDetailSiswa"
+        android:text="@string/text_level"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_nama_petugas"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/tv_level_petugas"
+        style="@style/textContentDetailSiswa"
+        tools:text="@string/text_level_petugas"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title_level_petugas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_title_level_petugas"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_level_petugas" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@+id/tv_level_petugas"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_level_petugas"
+        app:layout_constraintTop_toBottomOf="@+id/tv_level_petugas" />
+
+    <Button
+        android:id="@+id/btn_ubah_data_petugas"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_login"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="@string/text_edit_profile"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tv_level_petugas"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_level_petugas"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+    <Button
+        android:id="@+id/btn_logout_petugas"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_logout"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="Logout"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tv_level_petugas"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_level_petugas"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ubah_data_petugas" />
+
+
+    <ProgressBar
+        android:id="@+id/pg_profile_petugas"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

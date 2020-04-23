@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.entrydata.EntryDataFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/tv_title_entry_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="Entry Data Pembayaran SPP"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_title_nisn"
+        style="@style/textTitleForm"
+        android:layout_marginTop="16dp"
+        android:text="NISN Siswa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_entry_data" />
+
+    <EditText
+        android:id="@+id/edt_nisn_entry_data"
+        android:hint="NISN ..."
+        android:inputType="number"
+        style="@style/editTextCustom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_nisn"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_nisn" />
+
+    <TextView
+        android:id="@+id/tv_title_tanggal"
+        style="@style/textTitleForm"
+        android:layout_marginTop="16dp"
+        android:text="Tanggal Pembayaran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_nisn_entry_data" />
+
+    <EditText
+        android:id="@+id/edt_tanggal_entry_data"
+        android:hint="Tangaal Pemabayaran ..."
+        android:inputType="none"
+        android:clickable="true"
+        android:editable="false"
+        android:drawableLeft="@drawable/ic_date_range"
+        android:drawablePadding="10dp"
+        style="@style/editTextCustom.entryDataDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_tanggal"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_tanggal" />
+
+
+    <TextView
+        android:id="@+id/tv_title_month"
+        style="@style/textTitleForm"
+        android:layout_marginTop="16dp"
+        android:text="Bulan Pembayaran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tanggal_entry_data" />
+
+    <EditText
+        android:id="@+id/edt_bulan_entry_data"
+        android:hint="Bulan Pembayaran ..."
+        android:inputType="date"
+        style="@style/editTextCustom.entryDataDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_month"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_month" />
+
+    <TextView
+        android:id="@+id/tv_title_year"
+        style="@style/textTitleForm"
+        android:layout_marginTop="16dp"
+        android:text="Tahun Pembayaran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_bulan_entry_data" />
+
+    <EditText
+        android:id="@+id/edt_tahun_entry_data"
+        android:hint="Tahun Pembayaran ..."
+        android:inputType="date"
+        style="@style/editTextCustom.entryDataDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_year"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_year" />
+
+
+    <TextView
+        android:id="@+id/tv_title_jumlah_pembayaran"
+        style="@style/textTitleForm"
+        android:layout_marginTop="16dp"
+        android:text="Jumlah Pembayaran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tahun_entry_data" />
+
+    <EditText
+        android:id="@+id/edt_jumlah_entry_data"
+        android:hint="Jumlah Pembayaran ..."
+        android:inputType="number"
+        style="@style/editTextCustom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_title_jumlah_pembayaran"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_jumlah_pembayaran" />
+
+
+    <ProgressBar
+        android:id="@+id/pg_entry_data"
+        style="?android:attr/progressBarStyle"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_simpan_data_pembayaran"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/bg_button_login"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="Simpan Data"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cek_spp" />
+
+    <Button
+        android:id="@+id/btn_cek_spp"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:background="@drawable/bg_green"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="Cek Data SPP"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_jumlah_entry_data" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

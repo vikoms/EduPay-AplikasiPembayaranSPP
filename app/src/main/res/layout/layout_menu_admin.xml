@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:paddingStart="30dp">
+
+    <TextView
+        android:id="@+id/tv_nama_user"
+        style="@style/textStyleRedMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_hello_admin"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_data_siswa"
+        android:clickable="true"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_nama_user"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama_user" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/vektor_siswa"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/student_vektor" />
+
+            <TextView
+                android:id="@+id/tv_data_siswa"
+                android:layout_below="@+id/vektor_siswa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                style="@style/textStyleRedMedium"
+                android:text="@string/text_data_siswa" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_data_kelas"
+        android:clickable="true"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_data_siswa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toEndOf="@+id/cv_data_siswa"
+        app:layout_constraintTop_toTopOf="@+id/cv_data_siswa"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/vektor_kelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                app:srcCompat="@drawable/kelas_vektor" />
+
+            <TextView
+                android:id="@+id/tv_data_kelas"
+                style="@style/textStyleRedMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vektor_kelas"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_data_kelas" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_data_spp"
+        android:clickable="true"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cv_data_siswa"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/cv_data_siswa"
+        app:layout_constraintTop_toBottomOf="@+id/cv_data_siswa"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/vektor_spp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                app:srcCompat="@drawable/spp_vektor" />
+
+            <TextView
+                android:id="@+id/tv_data_spp"
+                style="@style/textStyleRedMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vektor_spp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_data_spp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_data_petugas"
+        android:clickable="true"
+        android:layout_width="135dp"
+        android:layout_height="135dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_data_spp"
+        app:layout_constraintEnd_toEndOf="@+id/cv_data_kelas"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/cv_data_kelas"
+        app:layout_constraintTop_toTopOf="@+id/cv_data_spp"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/vektor_petugas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                app:srcCompat="@drawable/petugas_vektor" />
+
+            <TextView
+                android:id="@+id/tv_data_petugas"
+                style="@style/textStyleRedMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vektor_petugas"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/text_data_petugas" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

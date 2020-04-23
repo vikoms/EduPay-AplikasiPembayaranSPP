@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="500dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:paddingHorizontal="10dp">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="Detail Pembayaran"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_nama_pembayaran"
+        style="@style/textTitleDetailSiswa.dialogPembayaran"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:text="Nama : Viko Muhammad Saputra" />
+
+    <TextView
+        android:id="@+id/tv_kelas_pembayaran"
+        style="@style/textTitleDetailSiswa.dialogPembayaran"
+        android:layout_marginTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama_pembayaran"
+        tools:text="Jumlah: Rp. 200000" />
+    <TextView
+        android:id="@+id/tv_nisn_pembayaran"
+        style="@style/textTitleDetailSiswa.dialogPembayaran"
+        android:layout_marginTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kelas_pembayaran"
+        tools:text="NISN : 0812321092" />
+    <TextView
+        android:id="@+id/tv_tanggal_pembayaran"
+        style="@style/textTitleDetailSiswa.dialogPembayaran"
+        android:layout_marginTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nisn_pembayaran"
+        tools:text="Tanggal : 22-12-2020" />
+    <TextView
+        android:id="@+id/tv_bulan_pembayaran"
+        style="@style/textTitleDetailSiswa.dialogPembayaran"
+        android:layout_marginTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tanggal_pembayaran"
+        tools:text="Bulan : December" />
+    <TextView
+        android:id="@+id/tv_tahun_pembayaran"
+        style="@style/textTitleDetailSiswa.dialogPembayaran"
+        android:layout_marginTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bulan_pembayaran"
+        tools:text="Tahun : 2020" />
+    <TextView
+        android:id="@+id/tv_petugas_pembayaran"
+        style="@style/textTitleDetailSiswa.dialogPembayaran"
+        android:layout_marginTop="15dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tahun_pembayaran"
+        tools:text="Petugas : Jajang Marpaung" />
+
+
+    <Button
+        android:id="@+id/btn_siswa_change_password"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_logout"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="Cetak Invoice"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_petugas_pembayaran" />
+
+    <Button
+        android:id="@+id/btn_ubah_data_siswa"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:background="@drawable/bg_button_login"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="Hapus Data"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_siswa_change_password" />
+
+    <ProgressBar
+        android:id="@+id/pg_pembayaran"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

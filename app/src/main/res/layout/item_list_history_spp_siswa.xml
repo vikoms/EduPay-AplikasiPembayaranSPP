@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/background_item_history_spp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_bulan_list_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:textColor="#BA000000"
+        android:textSize="15sp"
+        tools:text="Januari" />
+
+    <TextView
+        android:id="@+id/tv_nominal_list_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_bulan_list_history"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:textColor="#86000000"
+        android:textSize="15sp"
+        tools:text="Rp. 300000" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/tv_nominal_list_history"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_green"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:gravity="center"
+        android:text="Lunas"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/tv_tanggal_list_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_nominal_list_history"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:textColor="#86000000"
+        android:textSize="15sp"
+        tools:text="2020-12-22" />
+
+
+</RelativeLayout>
