@@ -178,6 +178,8 @@ public class EntryDataFragment extends Fragment implements View.OnClickListener,
                             if (spp != null) {
                                 edtJumlah.setText("0");
                                 edtJumlah.setText(String.valueOf(spp.getNominal()));
+                                btnSimpanData.setClickable(true);
+                                btnSimpanData.setBackground(getActivity().getResources().getDrawable(R.drawable.bg_button_login));
                                 showLoading(false);
                             } else {
                                 edtJumlah.setText("0");
