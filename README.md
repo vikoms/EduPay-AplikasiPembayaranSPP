@@ -1,6 +1,11 @@
 # Edupay
 Edupay adalah sebuah aplikasi untuk mengelola pembayaran sekolah
 
+### <a href ="https://drive.google.com/file/d/1HjsrEsMV4I8cfyQHnk1gkidRUfbnNSN2/view?usp=sharing">Download App</a>
+untuk menggunakan aplikasi ini harap login pertama kali menggunakan akun Admin
+Id       : 11223344
+password : admin1234
+
 # Fitur
 * Kelola data Siswa,Petugas,Kelas,SPP (admin)
 * Kelola Riwayat pembayaran siswa (admin & petugas)
